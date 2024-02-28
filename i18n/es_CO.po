@@ -1,0 +1,59 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e-20221012\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-07 06:56+0000\n"
+"PO-Revision-Date: 2023-06-07 06:56+0000\n"
+"Last-Translator: Julián Toscano <jotate70@gmail.com>, 2023\n"
+"Language-Team: Spanish (Colombia)"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: es_CO\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_template_attribute_line__attribute_type
+#: model:ir.model.fields,field_description:product_custom.field_product_template_attribute_value__attribute_type
+msgid "Attribute Type"
+msgstr "Tipo de atributo"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_product__brand_id
+#: model:ir.model.fields,field_description:product_custom.field_product_product__brand_id2
+#: model:ir.model.fields.selection,name:product_custom.selection__product_template_attribute_line__attribute_type__brand
+#: model_terms:ir.ui.view,arch_db:product_custom.product_product_search_stock_form_extend
+msgid "Brand"
+msgstr "Marca"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_product__material_id
+#: model:ir.model.fields,field_description:product_custom.field_product_product__material_id2
+#: model:ir.model.fields.selection,name:product_custom.selection__product_template_attribute_line__attribute_type__material
+#: model_terms:ir.ui.view,arch_db:product_custom.product_product_search_stock_form_extend
+msgid "Material"
+msgstr "Material"
+
+#. module: product_custom
+#: model:ir.model.fields.selection,name:product_custom.selection__product_template_attribute_line__attribute_type__other
+msgid "Other"
+msgstr "Otro"
+
+#. module: product_custom
+#: model:ir.model,name:product_custom.model_product_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: product_custom
+#: model:ir.model,name:product_custom.model_product_template_attribute_line
+msgid "Product Template Attribute Line"
+msgstr "atributo de plantilla de producto"
+
+#. module: product_custom
+#: model:ir.model,name:product_custom.model_product_template_attribute_value
+msgid "Product Template Attribute Value"
+msgstr "Valor de atributo de plantilla de producto"

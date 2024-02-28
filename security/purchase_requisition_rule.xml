@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--                        users group                         -->
+    <data>
+        <!--                    medium level user                   -->
+        <record id="group_stock_medium_user" model="res.groups">
+            <field name="name">Medium User</field>
+            <field name="category_id" ref="base.module_category_inventory_inventory"/>
+            <field name="implied_ids" eval="[(4, ref('stock.group_stock_user'))]"/>
+            <field name="users" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+    </data>
+    <!--                        Rules regits                         -->
+    <data>
+        <!--                    Stock picking type                   -->
+        <record id="purchase_requisition_manager_warehouse_rule_1" model="ir.rule">
+            <field name="name">Purchase requisition manager warehouse</field>
+            <field name="model_id" ref="stock.model_stock_picking_type"/>
+            <field name="domain_force">[('warehouse_id.employee_id.user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('stock.group_stock_user'))]"/>
+            <field name="perm_unlink" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_create" eval="1"/>
+        </record>
+
+        <record id="purchase_requisition_manager_warehouse_settings_rule_1" model="ir.rule">
+            <field name="name">Purchase requisition manager warehouse settings</field>
+            <field name="model_id" ref="stock.model_stock_picking_type"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('stock.group_stock_manager'))]"/>
+            <field name="perm_unlink" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_create" eval="1"/>
+        </record>
+        <!--                    Stock Quant                  -->
+        <record id="purchase_requisition_manager_warehouse_rule_2" model="ir.rule">
+            <field name="name">Purchase requisition manager warehouse</field>
+            <field name="model_id" ref="stock.model_stock_quant"/>
+            <field name="domain_force">[('warehouse_id.employee_id.user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('stock.group_stock_user'))]"/>
+            <field name="perm_unlink" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_create" eval="1"/>
+        </record>
+
+        <record id="purchase_requisition_manager_warehouse_settings_rule_2" model="ir.rule">
+            <field name="name">Purchase requisition manager warehouse settings</field>
+            <field name="model_id" ref="stock.model_stock_quant"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('stock.group_stock_manager'))]"/>
+            <field name="perm_unlink" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_create" eval="1"/>
+        </record>
+        <!--                    Stock Quant                  -->
+        <record id="purchase_requisition_manager_warehouse_rule_3" model="ir.rule">
+            <field name="name">Purchase requisition manager warehouse</field>
+            <field name="model_id" ref="stock.model_stock_quant"/>
+            <field name="domain_force">[('warehouse_id.employee_id.user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('stock.group_stock_user'))]"/>
+            <field name="perm_unlink" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_create" eval="1"/>
+        </record>
+
+        <record id="purchase_requisition_manager_warehouse_settings_rule_3" model="ir.rule">
+            <field name="name">Purchase requisition manager warehouse settings</field>
+            <field name="model_id" ref="stock.model_stock_quant"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('stock.group_stock_manager'))]"/>
+            <field name="perm_unlink" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_create" eval="1"/>
+        </record>
+        <!--                    Stock Picking                  -->
+        <record id="purchase_requisition_manager_warehouse_rule_4" model="ir.rule">
+            <field name="name">Purchase requisition manager warehouse</field>
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="domain_force">[('warehouse_id.employee_id.user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('stock.group_stock_user'))]"/>
+            <field name="perm_unlink" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_create" eval="1"/>
+        </record>
+
+        <record id="purchase_requisition_manager_warehouse_settings_rule_4" model="ir.rule">
+            <field name="name">Purchase requisition manager warehouse settings</field>
+            <field name="model_id" ref="stock.model_stock_picking"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('stock.group_stock_manager'))]"/>
+            <field name="perm_unlink" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_create" eval="1"/>
+        </record>
+        <!--                    Stock Move Line                  -->
+        <record id="purchase_requisition_manager_warehouse_rule_5" model="ir.rule">
+            <field name="name">Purchase requisition manager warehouse</field>
+            <field name="model_id" ref="stock.model_stock_move_line"/>
+            <field name="domain_force">['|', ('location_id.warehouse_id.employee_id.user_id', '=', user.id), ('location_dest_id.warehouse_id.employee_id.user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4, ref('stock.group_stock_user'))]"/>
+            <field name="perm_unlink" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_create" eval="1"/>
+        </record>
+
+        <record id="purchase_requisition_manager_warehouse_settings_rule_6" model="ir.rule">
+            <field name="name">Purchase requisition manager warehouse settings</field>
+            <field name="model_id" ref="stock.model_stock_move_line"/>
+            <field name="domain_force">[(1, '=', 1)]</field>
+            <field name="groups" eval="[(4, ref('stock.group_stock_manager'))]"/>
+            <field name="perm_unlink" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_create" eval="1"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--        Vista formulario      -->
+        <record id="product_template_attribute_value_view_tree_view_extend" model="ir.ui.view">
+            <field name="name">product_template_attribute_value_view_tree_view_extend</field>
+            <field name="model">product.template.attribute.value</field>
+            <field name="inherit_id" ref="product.product_template_attribute_value_view_tree"/>
+            <field name="arch" type="xml">
+                <!--         smart button           -->
+                <xpath expr="//field[@name='html_color']" position="after">
+                    <field name="attribute_type" optional="show"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
