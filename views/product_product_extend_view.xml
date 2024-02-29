@@ -8,12 +8,14 @@
             <field name="inherit_id" ref="product.product_normal_form_view" />
             <field name="arch" type="xml">
                 <!--                Fields           -->
+                <xpath expr="//field[@name='product_template_variant_value_ids']" position="replace"/>
                 <xpath expr="//field[@name='company_id']" position="after">
                     <!-- <field name="material_id" widget="many2many_tags" />
                     <field name="brand_id" widget="many2many_tags" /> -->
                     <field name="product_brand_id" />
                     <field name="product_material_id" />
                 </xpath>
+
             </field>
         </record>
         <!--                   Vista formulario 2             -->
@@ -23,11 +25,21 @@
             <field name="inherit_id" ref="product.product_variant_easy_edit_view" />
             <field name="arch" type="xml">
                 <!--                Fields           -->
-                <xpath expr="//field[@name='standard_price']" position="after">
+                <xpath expr="//field[@name='product_template_attribute_value_ids']" position="replace"/>
+                <xpath expr="//field[@name='currency_id']" position="before">
                     <!-- <field name="material_id" widget="many2many_tags" /> -->
                     <!-- <field name="brand_id" widget="many2many_tags" /> -->
                     <field name="product_brand_id" />
+                    <field name="product_brand_code" />
                     <field name="product_material_id" />
+                    <field name="product_material_code" />
+                </xpath>
+                <xpath expr="//sheet" position="after">
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" />
+                        <field name="activity_ids" widget="mail_activity" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
                 </xpath>
             </field>
         </record>
@@ -44,6 +56,14 @@
                     <field name="product_brand_id" />
                     <field name="product_material_id" />
                 </xpath>
+                <xpath expr="//field[@name='lst_price']" position="before">
+                    <field name="activity_ids" widget="list_activity" optional="show" />
+                </xpath>
+                <xpath expr="//field[@name='default_code']" position="before">
+                    <field name="name" readonly="1" />
+                </xpath>
+                <xpath expr="//field[@name='product_template_variant_value_ids']" position="replace" />
+                <xpath expr="//field[7]" position="replace" />
             </field>
         </record>
 

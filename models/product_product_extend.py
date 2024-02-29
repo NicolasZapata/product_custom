@@ -2,7 +2,8 @@ from odoo import fields, models, api, _
 
 
 class ProductProduct(models.Model):
-    _inherit = "product.product"
+    _name = "product.product"
+    _inherit = ["product.product", "mail.thread", "mail.activity.mixin"]
 
     brand_id = fields.Many2many(
         comodel_name="product.template.attribute.value",
@@ -13,6 +14,7 @@ class ProductProduct(models.Model):
         compute_sudo=False,
         compute="_compute_select_variant_brand",
         search="_search_select_variant_brand",
+        tracking=True,
     )
     brand_id2 = fields.Many2many(
         comodel_name="product.template.attribute.value",
@@ -21,6 +23,7 @@ class ProductProduct(models.Model):
         column2="product_attribute_id",
         string="Marca",
         store=True,
+        tracking=True,
     )
     material_id = fields.Many2many(
         comodel_name="product.template.attribute.value",
@@ -31,6 +34,7 @@ class ProductProduct(models.Model):
         compute_sudo=False,
         compute="_compute_select_variant_material",
         search="_search_select_variant_material",
+        tracking=True,
     )
     material_id2 = fields.Many2many(
         comodel_name="product.template.attribute.value",
@@ -39,9 +43,18 @@ class ProductProduct(models.Model):
         column2="product_material_id",
         string="Material",
         store=True,
+        tracking=True,
     )
-    product_brand_id = fields.Many2one("product.brand", string="Brand Id")
-    product_material_id = fields.Many2one("product.material", string="Product Material")
+    product_brand_id = fields.Many2one("product.brand", string="Brand", tracking=True)
+    product_brand_code = fields.Char(
+        "Product Brand Code", related="product_brand_id.code"
+    )
+    product_material_id = fields.Many2one(
+        "product.material", string="Product Material", tracking=True
+    )
+    product_material_code = fields.Char(
+        "Product Material Code", related="product_material_id.code"
+    )
 
     @api.depends("product_template_variant_value_ids")
     def _compute_select_variant_brand(self):
