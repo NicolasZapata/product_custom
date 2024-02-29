@@ -9,11 +9,11 @@
             <field name="arch" type="xml">
                 <!--                Fields           -->
                 <xpath expr="//field[@name='product_template_variant_value_ids']" position="replace"/>
-                <xpath expr="//field[@name='company_id']" position="after">
-                    <!-- <field name="material_id" widget="many2many_tags" />
-                    <field name="brand_id" widget="many2many_tags" /> -->
+                <xpath expr="//field[@name='product_variant_id']" position="after">
                     <field name="product_brand_id" />
+                    <field name="product_brand_code" />
                     <field name="product_material_id" />
+                    <field name="product_material_code" />
                 </xpath>
 
             </field>
