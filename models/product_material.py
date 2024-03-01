@@ -6,3 +6,4 @@ class ProductMaterial(models.Model):
   
   name = fields.Char(string='Name')
   code = fields.Char(string='Code')
+  product_template_id = fields.Many2one('product.template', string='Product Template')
