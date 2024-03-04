@@ -13,7 +13,7 @@ class ProductProduct(models.Model):
         string="Brand",
         compute_sudo=False,
         compute="_compute_select_variant_brand",
-        search="_search_select_variant_brand",
+        # search="_search_select_variant_brand",
         tracking=True,
     )
     brand_id2 = fields.Many2many(
@@ -33,7 +33,7 @@ class ProductProduct(models.Model):
         string="Material",
         compute_sudo=False,
         compute="_compute_select_variant_material",
-        search="_search_select_variant_material",
+        # search="_search_select_variant_material",
         tracking=True,
     )
     material_id2 = fields.Many2many(
@@ -68,21 +68,21 @@ class ProductProduct(models.Model):
             else:
                 rec.brand_id = False
 
-    def _search_select_variant_brand(self, operator, value):
-        value_1 = value.upper()  # Convierte a mayuscula
-        vat = []
-        name = self.env["product.template.attribute.value"].search(
-            [("name", "=", value_1)]
-        )
-        data = self.env["product.product"].search(
-            [("product_template_variant_value_ids", "in", name.ids)]
-        )
-        if data:
-            for rec in data:
-                vat.append(rec.id)
-        else:
-            vat = []
-        return [("id", "in", vat)]
+    # def _search_select_variant_brand(self, operator, value):
+    #     value_1 = value.upper()  # Convierte a mayuscula
+    #     vat = []
+    #     name = self.env["product.template.attribute.value"].search(
+    #         [("name", "=", value_1)]
+    #     )
+    #     data = self.env["product.product"].search(
+    #         [("product_template_variant_value_ids", "in", name.ids)]
+    #     )
+    #     if data:
+    #         for rec in data:
+    #             vat.append(rec.id)
+    #     else:
+    #         vat = []
+    #     return [("id", "in", vat)]
 
     @api.depends("product_template_variant_value_ids")
     def _compute_select_variant_material(self):
@@ -96,18 +96,18 @@ class ProductProduct(models.Model):
             else:
                 rec.material_id = False
 
-    def _search_select_variant_material(self, operator, value):
-        value_1 = value.upper()  # Convierte a mayuscula
-        vat = []
-        name = self.env["product.template.attribute.value"].search(
-            [("name", "=", value_1)]
-        )
-        data = self.env["product.product"].search(
-            [("product_template_variant_value_ids", "in", name.ids)]
-        )
-        if data:
-            for rec in data:
-                vat.append(rec.id)
-        else:
-            vat = []
-        return [("id", "in", vat)]
+    # def _search_select_variant_material(self, operator, value):
+    #     value_1 = value.upper()  # Convierte a mayuscula
+    #     vat = []
+    #     name = self.env["product.template.attribute.value"].search(
+    #         [("name", "=", value_1)]
+    #     )
+    #     data = self.env["product.product"].search(
+    #         [("product_template_variant_value_ids", "in", name.ids)]
+    #     )
+    #     if data:
+    #         for rec in data:
+    #             vat.append(rec.id)
+    #     else:
+    #         vat = []
+    #     return [("id", "in", vat)]

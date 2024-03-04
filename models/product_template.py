@@ -5,9 +5,27 @@ from odoo import fields, models, api
 
 
 class ProductTemplate(models.Model):
-    _inherit = "product.template"
+    _name = "product.template"
+    _inherit = ["product.template", "mail.thread", "mail.activity.mixin"]
     _check_company_auto = True
 
+    category_code = fields.Char("Category Code", related="categ_id.code", tracking=True)
+    product_class_id = fields.Many2one(
+        "product.class",
+        string="Product Class",
+        tracking=True,
+    )
+    product_class_code = fields.Char(
+        "Product CLass Code",
+        related="product_class_id.code",
+        tracking=True,
+    )
+    product_brand_ids = fields.One2many(
+        "product.brand", "product_template_id", string="Product Brand"
+    )
+    product_material_ids = fields.One2many(
+        "product.material", "product_template_id", string="Product Material"
+    )
     optional_product_ids = fields.Many2many(
         "product.template",
         "product_optional_rel",

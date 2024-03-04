@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# Autor: Leonardo Garavito
-# Email: lgaravito@grupoquanam.com
+# Autor: Leonardo Garavito y Nicolás Zapata
+# Email: lgaravito@grupoquanam.com, nzapata@grupoquanam.com
 # Desarrollador y funcional Odoo
 #
 {
@@ -30,6 +30,8 @@
         "views/product_product_extend_view.xml",
         "views/product_brand_view.xml",
         "views/product_material_views.xml",
+        'views/product_category.xml',
+        'views/product_class_view.xml',
         # 'views/purchase_views.xml',
     ],
     "installable": True,
