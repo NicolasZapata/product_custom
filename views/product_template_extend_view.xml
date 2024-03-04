@@ -24,15 +24,26 @@
           <field name="product_class_id" />
           <field name="product_class_code" />
         </xpath>
+        <xpath expr="//page[@name='variants']" position="replace">
+          <page name="brands_materials" string="Brands and Materials">
+            <separator string="Brands" />
+            <field name="product_brand_ids" widget="one2many">
+              <tree editable="bottom">
+                <field name="name" />
+                <field name="code" />
+              </tree>
+            </field>
+            <separator string="Materials" />
+            <field name="product_material_ids" widget="one2many">
+              <tree editable="bottom">
+                <field name="name" />
+                <field name="code" />
+              </tree>
+            </field>
+          </page>
+        </xpath>
       </field>
-      <!-- <xpath expr="//page[@name='variants']" position="replace">
-        <page name="brands_materials" string="Brands and Materials">
-          <separator string="Brands" />
-          <field name="product_brand_ids" />
-          <separator string="Materials" />
-          <field name="product_material_ids" />
-        </page>
-      </xpath> -->
     </record>
+
   </data>
 </odoo>
