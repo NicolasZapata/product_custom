@@ -8,4 +8,5 @@ from . import product_material
 from . import product_template
 from . import product_category
 from . import product_class
+from . import product_reference
 # from . import purchase_order_line

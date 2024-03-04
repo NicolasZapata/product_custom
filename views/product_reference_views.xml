@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <data>
+
+    <record id="product_reference_view_tree" model="ir.ui.view">
+      <field name="name">product.reference.view.tree</field>
+      <field name="model">product.reference</field>
+      <field name="arch" type="xml">
+        <tree string="Product Reference">
+          <field name="name" />
+          <field name="code" />
+          <field name="activity_ids" widget="list_activity" optional="show" />
+        </tree>
+      </field>
+    </record>
+
+    <record id="product_reference_view_form" model="ir.ui.view">
+      <field name="name">product.reference.view.form</field>
+      <field name="model">product.reference</field>
+      <field name="arch" type="xml">
+        <form string="Product Reference">
+          <sheet>
+            <group>
+              <field name="name" />
+              <field name="code" />
+            </group>
+          </sheet>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="activity_ids" widget="mail_activity"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </form>
+      </field>
+    </record>
+
+    <record id="product_reference_action" model="ir.actions.act_window">
+      <field name="name">Product Reference</field>
+      <field name="res_model">product.reference</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+          Add a New Product Reference
+        </p>
+      </field>
+    </record>
+
+    <menuitem
+      id="product_reference_menu"
+      name="Product Reference"
+      action="product_reference_action"
+      parent="sale.prod_config_main"
+      sequence="10"/>
+
+  </data>
+
+
+</odoo>

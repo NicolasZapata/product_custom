@@ -32,6 +32,7 @@
         "views/product_material_views.xml",
         'views/product_category.xml',
         'views/product_class_view.xml',
+        'views/product_reference_views.xml',
         # 'views/purchase_views.xml',
     ],
     "installable": True,
