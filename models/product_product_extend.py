@@ -13,7 +13,6 @@ class ProductProduct(models.Model):
     default_code = fields.Char(
         "Internal Reference",
         index=True,
-        default=45,
         store=True,
     )
     categ_code = fields.Char(
@@ -23,6 +22,7 @@ class ProductProduct(models.Model):
     product_class_id = fields.Many2one(
         "product.class",
         string="Product Class",
+        store=True,
         # related="product_template_id.product_class_id",
     )
     brand_code = fields.Char(string="Brand", related="product_brand_id.code")
