@@ -1,5 +1,4 @@
 from odoo import fields, models, api, _
-import random
 
 
 class ProductProduct(models.Model):
@@ -17,7 +16,6 @@ class ProductProduct(models.Model):
         default=45,
         store=True,
     )
-    sequency = fields.Char("Sequency", default=lambda self: random.randint(00, 99))
     categ_code = fields.Char(
         "Category Code",
         related="categ_id.code",
