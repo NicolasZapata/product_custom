@@ -15,7 +15,7 @@ class ProductTemplate(models.Model):
         "product.class",
         string="Product Class",
         tracking=True,
-        related="product_product_id.product_class_id",
+        # related="product_product_id.product_class_id",
         readonly=False,
         # store=True,
     )
