@@ -10,10 +10,14 @@ class ProductTemplate(models.Model):
     _check_company_auto = True
 
     category_code = fields.Char("Category Code", related="categ_id.code", tracking=True)
+    product_product_id = fields.Many2one('product.product', string='Product Product')
     product_class_id = fields.Many2one(
         "product.class",
         string="Product Class",
         tracking=True,
+        related="product_product_id.product_class_id",
+        readonly=False,
+        # store=True,
     )
     product_class_code = fields.Char(
         "Product CLass Code",

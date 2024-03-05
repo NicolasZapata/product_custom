@@ -1,10 +1,42 @@
 from odoo import fields, models, api, _
+import random
 
 
 class ProductProduct(models.Model):
     _name = "product.product"
     _inherit = ["product.product", "mail.thread", "mail.activity.mixin"]
 
+    product_class_code = fields.Char(
+        "Product Class Code",
+        tracking=True,
+        related="product_class_id.code",
+    )
+    default_code = fields.Char(
+        "Internal Reference",
+        index=True,
+        default=45,
+        store=True,
+    )
+    sequency = fields.Char("Sequency", default=lambda self: random.randint(00, 99))
+    categ_code = fields.Char(
+        "Category Code",
+        related="categ_id.code",
+    )
+    product_class_id = fields.Many2one(
+        "product.class",
+        string="Product Class",
+        # related="product_template_id.product_class_id",
+    )
+    brand_code = fields.Char(string="Brand", related="product_brand_id.code")
+    material_code = fields.Char(string="Material", related="product_material_id.code")
+    barcode = fields.Char(
+        "Barcode",
+        # copy=False,
+        compute="_auto_complete_barcode",
+        # index="btree_not_null",
+        help="International Article Number used for product identification.",
+        store=True,
+    )
     brand_id = fields.Many2many(
         comodel_name="product.template.attribute.value",
         relation="x_product_template_attribute_brand_rel",
@@ -45,6 +77,7 @@ class ProductProduct(models.Model):
         store=True,
         tracking=True,
     )
+    product_template_id = fields.Many2one("product.template", string="Product Template")
     product_brand_id = fields.Many2one("product.brand", string="Brand", tracking=True)
     product_brand_code = fields.Char(
         "Product Brand Code", related="product_brand_id.code"
