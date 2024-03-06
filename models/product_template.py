@@ -15,6 +15,7 @@ class ProductTemplate(models.Model):
         "product.class",
         string="Product Class",
         tracking=True,
+        change_default=True,
         # related="product_product_id.product_class_id",
         readonly=False,
         # store=True,
@@ -41,6 +42,10 @@ class ProductTemplate(models.Model):
         "e.g. for computers: warranty, software, etc.).",
         check_company=True,
     )
+
+    @api.onchange('product_class_id')
+    def _onchange_product_class_id(self):
+        self.product_variant_ids.product_class_id = self.product_class_id
 
     @api.depends(
         "attribute_line_ids.value_ids.is_custom",

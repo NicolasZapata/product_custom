@@ -14,12 +14,14 @@ class ProductProduct(models.Model):
         "Category Code",
         related="categ_id.code",
     )
-    product_class_id = fields.Many2one(
-        "product.class",
-        string="Product Class",
-        # store=True,
-        # related="product_template_id.product_class_id",
-    )
+    # product_class_id = fields.Many2one(
+    #     "product.class",
+    #     string="Product Class",
+    #     change_default=True,
+    #     # store=True,
+    #     # compute="_onchange_product_class_id",
+    #     # related="product_template_id.product_class_id",
+    # )
     brand_code = fields.Char(string="Brand", related="product_brand_id.code")
     material_code = fields.Char(string="Material", related="product_material_id.code")
     barcode = fields.Char(
@@ -81,6 +83,10 @@ class ProductProduct(models.Model):
     product_material_code = fields.Char(
         "Product Material Code", related="product_material_id.code"
     )
+
+    @api.onchange('product_class_id')
+    def _onchange_product_class_id(self):
+        self.product_variant_ids.product_class_id = self.product_class_id
 
     @api.depends("product_template_variant_value_ids")
     def _compute_select_variant_brand(self):
