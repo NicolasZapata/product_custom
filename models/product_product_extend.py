@@ -78,7 +78,7 @@ class ProductProduct(models.Model):
         "Product Brand Code", related="product_brand_id.code"
     )
     product_material_id = fields.Many2one(
-        "product.material", string="Product Material", tracking=True
+        "product.material", string="Material", tracking=True
     )
     product_material_code = fields.Char(
         "Product Material Code", related="product_material_id.code"

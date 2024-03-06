@@ -52,10 +52,8 @@
             <field name="arch" type="xml">
                 <!--                Fields           -->
                 <xpath expr="//field[@name='name']" position="before">
-                    <!-- <field name="material_id" widget="many2many_tags" optional="show" /> -->
-                    <!-- <field name="brand_id" widget="many2many_tags" optional="show" /> -->
-                    <field name="product_brand_id" />
                     <field name="product_material_id" />
+                    <field name="product_brand_id" />
                 </xpath>
                 <xpath expr="//field[@name='lst_price']" position="before">
                     <field name="activity_ids" widget="list_activity" optional="show" />
@@ -69,46 +67,33 @@
         </record>
 
         <!--              control panel view stock              -->
-        <!-- <record id="product_product_search_stock_form_extend" model="ir.ui.view">
+        <record id="product_product_search_stock_form_extend" model="ir.ui.view">
             <field name="name">product_template_search_stock_form_extend</field>
             <field name="model">product.product</field>
             <field name="inherit_id" ref="stock.stock_product_search_form_view" />
             <field name="arch" type="xml">
                 <xpath expr="//filter[@name='real_stock_available']" position="after">
-                    <field name="material_id2" optional="show" />
-                    <field name="brand_id2" optional="show" />
-                    <filter string="Material" name="material_id" domain="[]"
-                        context="{'group_by': 'material_id2'}" />
-                    <filter string="Brand" name="brand_id" domain="[]"
-                        context="{'group_by': 'brand_id2'}" />
-                    <filter string="Product Brand" name="product_brand_id" domain="[]"
-                        context="{'group_by': 'product_brand_id'}" />
-                    <filter string="Product Material" name="product_material_id" domain="[]"
-                        context="{'group_by': 'product_material_id'}" />
+                    <field name="product_material_id" optional="show" />
+                    <field name="product_brand_id" optional="show" />
+                    <filter string="Material" name="product_material_id" domain="[]"/>
+                    <filter string="Brand" name="product_brand_id" domain="[]"/>
                 </xpath>
             </field>
-        </record> -->
+        </record>
 
         <!--              control panel view purchase              -->
-        <!-- <record id="product_product_search_form_view_extend" model="ir.ui.view">
+        <record id="product_product_search_form_view_extend" model="ir.ui.view">
             <field name="name">product_product_search_form_view_extend</field>
             <field name="model">product.product</field>
             <field name="inherit_id" ref="product.product_search_form_view" />
             <field name="arch" type="xml">
                 <xpath expr="//filter[@name='inactive']" position="after">
-                    <field name="material_id2" optional="show" />
-                    <field name="brand_id2" string="Marca" optional="show" />
-                    <filter string="Material" name="material_id" domain="[]"
-                        context="{'group_by': 'material_id2'}" />
-                    <filter string="Marca" name="brand_id" domain="[]"
-                        context="{'group_by': 'brand_id2'}" />
-                    <filter string="Product Brand" name="product_brand_id" domain="[]"
-                        context="{'group_by': 'product_brand_id'}" />
-                    <filter string="Product Material" name="product_material_id" domain="[]"
-                        context="{'group_by': 'product_material_id'}" />
+                    <field name="product_material_id" optional="show" />
+                    <field name="product_brand_id" optional="show" />
+                    <filter string="Material" name="product_material_id" domain="[]"/>
+                    <filter string="Brand" name="product_brand_id" domain="[]"/>
                 </xpath>
             </field>
-        </record> -->
-
+        </record>
     </data>
 </odoo>
