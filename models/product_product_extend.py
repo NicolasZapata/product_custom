@@ -24,14 +24,6 @@ class ProductProduct(models.Model):
     # )
     brand_code = fields.Char(string="Brand", related="product_brand_id.code")
     material_code = fields.Char(string="Material", related="product_material_id.code")
-    barcode = fields.Char(
-        "Barcode",
-        # copy=False,
-        compute="_auto_complete_barcode",
-        # index="btree_not_null",
-        help="International Article Number used for product identification.",
-        store=True,
-    )
     brand_id = fields.Many2many(
         comodel_name="product.template.attribute.value",
         relation="x_product_template_attribute_brand_rel",
