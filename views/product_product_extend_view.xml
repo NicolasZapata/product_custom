@@ -8,30 +8,13 @@
             <field name="inherit_id" ref="product.product_normal_form_view" />
             <field name="arch" type="xml">
                 <!--                Fields           -->
-                <xpath expr="//field[@name='product_template_variant_value_ids']" position="replace" />
+                <xpath expr="//field[@name='product_template_variant_value_ids']" position="replace"/>
                 <xpath expr="//field[@name='product_variant_id']" position="after">
-                    <field name="product_template_id" invisible="1" />
-                </xpath>
-
-                <xpath expr="//page[@name='general_information']" position="after">
-                    <page name="barcode_configuration" string="Barcode Configuration">
-                        <div class="oe_title">
-                            <label for="barcode" />
-                            <h2>
-                                <field name="barcode" />
-                            </h2>
-                        </div>
-                        <group name="brand_material" string="Brands And Materials">
-                            <group name="brand" string="Brand">
-                                <field name="product_brand_id" />
-                                <field name="product_brand_code" />
-                            </group>
-                            <group name="material" string="Material">
-                                <field name="product_material_id" />
-                                <field name="product_material_code" />
-                            </group>
-                        </group>
-                    </page>
+                    <field name="product_template_id" invisible="1"/>
+                    <field name="product_brand_id" />
+                    <field name="product_brand_code" />
+                    <field name="product_material_id" />
+                    <field name="product_material_code" />
                 </xpath>
 
             </field>
@@ -43,8 +26,7 @@
             <field name="inherit_id" ref="product.product_variant_easy_edit_view" />
             <field name="arch" type="xml">
                 <!--                Fields           -->
-                <xpath expr="//field[@name='product_template_attribute_value_ids']"
-                    position="replace" />
+                <xpath expr="//field[@name='product_template_attribute_value_ids']" position="replace"/>
                 <xpath expr="//field[@name='currency_id']" position="before">
                     <!-- <field name="material_id" widget="many2many_tags" /> -->
                     <!-- <field name="brand_id" widget="many2many_tags" /> -->
@@ -93,8 +75,8 @@
                 <xpath expr="//filter[@name='real_stock_available']" position="after">
                     <field name="product_material_id" optional="show" />
                     <field name="product_brand_id" optional="show" />
-                    <filter string="Material" name="product_material_id" domain="[]" />
-                    <filter string="Brand" name="product_brand_id" domain="[]" />
+                    <filter string="Material" name="product_material_id" domain="[]"/>
+                    <filter string="Brand" name="product_brand_id" domain="[]"/>
                 </xpath>
             </field>
         </record>
@@ -108,8 +90,8 @@
                 <xpath expr="//filter[@name='inactive']" position="after">
                     <field name="product_material_id" optional="show" />
                     <field name="product_brand_id" optional="show" />
-                    <filter string="Material" name="product_material_id" domain="[]" />
-                    <filter string="Brand" name="product_brand_id" domain="[]" />
+                    <filter string="Material" name="product_material_id" domain="[]"/>
+                    <filter string="Brand" name="product_brand_id" domain="[]"/>
                 </xpath>
             </field>
         </record>
