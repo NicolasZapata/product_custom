@@ -1,20 +1,74 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# 	* product_custom
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0+e-20221012\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-07 06:56+0000\n"
-"PO-Revision-Date: 2023-06-07 06:56+0000\n"
-"Last-Translator: Julián Toscano <jotate70@gmail.com>, 2023\n"
-"Language-Team: Spanish (Colombia)"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Language: es_CO\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: quanamco\n"
+"Language: es-co\n"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__message_needaction
+#: model:ir.model.fields,field_description:product_custom.field_product_product__message_needaction
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__message_needaction
+#: model:ir.model.fields,field_description:product_custom.field_product_template__message_needaction
+msgid "Action Needed"
+msgstr "Acción Requerida"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__activity_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_product__activity_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__activity_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_template__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__activity_exception_decoration
+#: model:ir.model.fields,field_description:product_custom.field_product_product__activity_exception_decoration
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__activity_exception_decoration
+#: model:ir.model.fields,field_description:product_custom.field_product_template__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Decoración de Actividad  de Excepción"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__activity_state
+#: model:ir.model.fields,field_description:product_custom.field_product_product__activity_state
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__activity_state
+#: model:ir.model.fields,field_description:product_custom.field_product_template__activity_state
+msgid "Activity State"
+msgstr "Estado de la actividad"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__activity_type_icon
+#: model:ir.model.fields,field_description:product_custom.field_product_product__activity_type_icon
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__activity_type_icon
+#: model:ir.model.fields,field_description:product_custom.field_product_template__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Ícono de tipo de actvidad"
+
+#. module: product_custom
+#: model_terms:ir.actions.act_window,help:product_custom.product_reference_action
+msgid "Add a New Product Reference"
+msgstr "Agregar una nueva referencia de producto"
+
+#. module: product_custom
+#: model_terms:ir.actions.act_window,help:product_custom.product_material_action
+msgid "Add a new Material Product"
+msgstr "Añadir un nuevo producto material"
+
+#. module: product_custom
+#: model_terms:ir.actions.act_window,help:product_custom.product_brand_action
+msgid "Add a new Product Brand"
+msgstr "Agregar una nueva marca de producto"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__message_attachment_count
+#: model:ir.model.fields,field_description:product_custom.field_product_product__message_attachment_count
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__message_attachment_count
+#: model:ir.model.fields,field_description:product_custom.field_product_template__message_attachment_count
+msgid "Attachment Count"
+msgstr "Nº de archivos adjuntos"
 
 #. module: product_custom
 #: model:ir.model.fields,field_description:product_custom.field_product_template_attribute_line__attribute_type
@@ -23,20 +77,309 @@ msgid "Attribute Type"
 msgstr "Tipo de atributo"
 
 #. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_product__barcode
+msgid "Barcode"
+msgstr "Código de barras"
+
+#. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_product_form_extend_view
+msgid "Barcode Configuration"
+msgstr "Configuración de código de barras"
+
+#. module: product_custom
+#: model:ir.model,name:product_custom.model_product_brand
+#: model:ir.model.fields,field_description:product_custom.field_product_product__brand_code
 #: model:ir.model.fields,field_description:product_custom.field_product_product__brand_id
-#: model:ir.model.fields,field_description:product_custom.field_product_product__brand_id2
+#: model:ir.model.fields,field_description:product_custom.field_product_product__product_brand_id
 #: model:ir.model.fields.selection,name:product_custom.selection__product_template_attribute_line__attribute_type__brand
+#: model_terms:ir.ui.view,arch_db:product_custom.product_product_form_extend_view
+#: model_terms:ir.ui.view,arch_db:product_custom.product_product_search_form_view_extend
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_search_stock_form_extend
 msgid "Brand"
 msgstr "Marca"
 
 #. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_product_form_extend_view
+msgid "Brands And Materials"
+msgstr "Marcas y materiales"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_product__categ_code
+#: model:ir.model.fields,field_description:product_custom.field_product_product__category_code
+#: model:ir.model.fields,field_description:product_custom.field_product_template__category_code
+msgid "Category Code"
+msgstr "Código de categoría"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_brand__code
+#: model:ir.model.fields,field_description:product_custom.field_product_category__code
+#: model:ir.model.fields,field_description:product_custom.field_product_class__code
+#: model:ir.model.fields,field_description:product_custom.field_product_material__code
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__code
+msgid "Code"
+msgstr "Código"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_brand__create_uid
+#: model:ir.model.fields,field_description:product_custom.field_product_class__create_uid
+#: model:ir.model.fields,field_description:product_custom.field_product_material__create_uid
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_brand__create_date
+#: model:ir.model.fields,field_description:product_custom.field_product_class__create_date
+#: model:ir.model.fields,field_description:product_custom.field_product_material__create_date
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_brand__display_name
+#: model:ir.model.fields,field_description:product_custom.field_product_class__display_name
+#: model:ir.model.fields,field_description:product_custom.field_product_material__display_name
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__message_follower_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_product__message_follower_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__message_follower_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_template__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__message_partner_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_product__message_partner_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__message_partner_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_template__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Asociados)"
+
+#. module: product_custom
+#: model:ir.model.fields,help:product_custom.field_product_category__activity_type_icon
+#: model:ir.model.fields,help:product_custom.field_product_product__activity_type_icon
+#: model:ir.model.fields,help:product_custom.field_product_reference__activity_type_icon
+#: model:ir.model.fields,help:product_custom.field_product_template__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icono de Font Awesome ej. fa-tasks"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__has_message
+#: model:ir.model.fields,field_description:product_custom.field_product_product__has_message
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__has_message
+#: model:ir.model.fields,field_description:product_custom.field_product_template__has_message
+msgid "Has Message"
+msgstr "Tiene un mensaje"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_brand__id
+#: model:ir.model.fields,field_description:product_custom.field_product_class__id
+#: model:ir.model.fields,field_description:product_custom.field_product_material__id
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__id
+msgid "ID"
+msgstr "IDENTIFICACIÓN"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__activity_exception_icon
+#: model:ir.model.fields,field_description:product_custom.field_product_product__activity_exception_icon
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__activity_exception_icon
+#: model:ir.model.fields,field_description:product_custom.field_product_template__activity_exception_icon
+msgid "Icon"
+msgstr "Icono"
+
+#. module: product_custom
+#: model:ir.model.fields,help:product_custom.field_product_category__activity_exception_icon
+#: model:ir.model.fields,help:product_custom.field_product_product__activity_exception_icon
+#: model:ir.model.fields,help:product_custom.field_product_reference__activity_exception_icon
+#: model:ir.model.fields,help:product_custom.field_product_template__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icono para indicar una actividad de excepción."
+
+#. module: product_custom
+#: model:ir.model.fields,help:product_custom.field_product_category__message_needaction
+#: model:ir.model.fields,help:product_custom.field_product_product__message_needaction
+#: model:ir.model.fields,help:product_custom.field_product_reference__message_needaction
+#: model:ir.model.fields,help:product_custom.field_product_template__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcado, los nuevos mensajes requerirán su atención."
+
+#. module: product_custom
+#: model:ir.model.fields,help:product_custom.field_product_category__message_has_error
+#: model:ir.model.fields,help:product_custom.field_product_category__message_has_sms_error
+#: model:ir.model.fields,help:product_custom.field_product_product__message_has_error
+#: model:ir.model.fields,help:product_custom.field_product_product__message_has_sms_error
+#: model:ir.model.fields,help:product_custom.field_product_reference__message_has_error
+#: model:ir.model.fields,help:product_custom.field_product_reference__message_has_sms_error
+#: model:ir.model.fields,help:product_custom.field_product_template__message_has_error
+#: model:ir.model.fields,help:product_custom.field_product_template__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si se encuentra marcado, algunos mensajes tienen error de envío."
+
+#. module: product_custom
+#: model:ir.model.fields,help:product_custom.field_product_product__barcode
+msgid "International Article Number used for product identification."
+msgstr "Número de artículo internacional utilizado para la identificación del producto."
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__message_is_follower
+#: model:ir.model.fields,field_description:product_custom.field_product_product__message_is_follower
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__message_is_follower
+#: model:ir.model.fields,field_description:product_custom.field_product_template__message_is_follower
+msgid "Is Follower"
+msgstr "Es Seguidor"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_brand____last_update
+#: model:ir.model.fields,field_description:product_custom.field_product_class____last_update
+#: model:ir.model.fields,field_description:product_custom.field_product_material____last_update
+#: model:ir.model.fields,field_description:product_custom.field_product_reference____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_brand__write_uid
+#: model:ir.model.fields,field_description:product_custom.field_product_class__write_uid
+#: model:ir.model.fields,field_description:product_custom.field_product_material__write_uid
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__write_uid
+msgid "Last Updated by"
+msgstr "Actualizado por última vez por"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_brand__write_date
+#: model:ir.model.fields,field_description:product_custom.field_product_class__write_date
+#: model:ir.model.fields,field_description:product_custom.field_product_material__write_date
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__message_main_attachment_id
+#: model:ir.model.fields,field_description:product_custom.field_product_product__message_main_attachment_id
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__message_main_attachment_id
+#: model:ir.model.fields,field_description:product_custom.field_product_template__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjuntos principales"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_product__brand_id2
+msgid "Marca"
+msgstr "marca"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_product__material_code
 #: model:ir.model.fields,field_description:product_custom.field_product_product__material_id
 #: model:ir.model.fields,field_description:product_custom.field_product_product__material_id2
+#: model:ir.model.fields,field_description:product_custom.field_product_product__product_material_id
 #: model:ir.model.fields.selection,name:product_custom.selection__product_template_attribute_line__attribute_type__material
+#: model_terms:ir.ui.view,arch_db:product_custom.product_product_form_extend_view
+#: model_terms:ir.ui.view,arch_db:product_custom.product_product_search_form_view_extend
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_search_stock_form_extend
 msgid "Material"
 msgstr "Material"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__message_has_error
+#: model:ir.model.fields,field_description:product_custom.field_product_product__message_has_error
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__message_has_error
+#: model:ir.model.fields,field_description:product_custom.field_product_template__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de Envío de Mensaje"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__message_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_product__message_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__message_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_template__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__my_activity_date_deadline
+#: model:ir.model.fields,field_description:product_custom.field_product_product__my_activity_date_deadline
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__my_activity_date_deadline
+#: model:ir.model.fields,field_description:product_custom.field_product_template__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Mi fecha límite de actividad"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_brand__name
+#: model:ir.model.fields,field_description:product_custom.field_product_class__name
+#: model:ir.model.fields,field_description:product_custom.field_product_material__name
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__activity_date_deadline
+#: model:ir.model.fields,field_description:product_custom.field_product_product__activity_date_deadline
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__activity_date_deadline
+#: model:ir.model.fields,field_description:product_custom.field_product_template__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Siguiente plazo de actividad"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__activity_summary
+#: model:ir.model.fields,field_description:product_custom.field_product_product__activity_summary
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__activity_summary
+#: model:ir.model.fields,field_description:product_custom.field_product_template__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen de la siguiente actividad"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__activity_type_id
+#: model:ir.model.fields,field_description:product_custom.field_product_product__activity_type_id
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__activity_type_id
+#: model:ir.model.fields,field_description:product_custom.field_product_template__activity_type_id
+msgid "Next Activity Type"
+msgstr "Siguiente tipo de actividad"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__message_needaction_counter
+#: model:ir.model.fields,field_description:product_custom.field_product_product__message_needaction_counter
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__message_needaction_counter
+#: model:ir.model.fields,field_description:product_custom.field_product_template__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de Acciones"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__message_has_error_counter
+#: model:ir.model.fields,field_description:product_custom.field_product_product__message_has_error_counter
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__message_has_error_counter
+#: model:ir.model.fields,field_description:product_custom.field_product_template__message_has_error_counter
+msgid "Number of errors"
+msgstr "Numero de errores"
+
+#. module: product_custom
+#: model:ir.model.fields,help:product_custom.field_product_category__message_needaction_counter
+#: model:ir.model.fields,help:product_custom.field_product_product__message_needaction_counter
+#: model:ir.model.fields,help:product_custom.field_product_reference__message_needaction_counter
+#: model:ir.model.fields,help:product_custom.field_product_template__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: product_custom
+#: model:ir.model.fields,help:product_custom.field_product_category__message_has_error_counter
+#: model:ir.model.fields,help:product_custom.field_product_product__message_has_error_counter
+#: model:ir.model.fields,help:product_custom.field_product_reference__message_has_error_counter
+#: model:ir.model.fields,help:product_custom.field_product_template__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de envío"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_product__optional_product_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_template__optional_product_ids
+msgid "Optional Products"
+msgstr "Productos opcionales"
+
+#. module: product_custom
+#: model:ir.model.fields,help:product_custom.field_product_product__optional_product_ids
+#: model:ir.model.fields,help:product_custom.field_product_template__optional_product_ids
+msgid "Optional Products are suggested whenever the customer hits *Add to Cart* (cross-sell strategy, e.g. for computers: warranty, software, etc.)."
+msgstr "Los productos opcionales aparecen como sugerencias cada vez que el cliente pulsa en \"Añadir al carro\" (estrategia de venta cruzada; p. ej., en el caso de los ordenadores: garantía, software, etc.)."
 
 #. module: product_custom
 #: model:ir.model.fields.selection,name:product_custom.selection__product_template_attribute_line__attribute_type__other
@@ -44,16 +387,155 @@ msgid "Other"
 msgstr "Otro"
 
 #. module: product_custom
-#: model:ir.model,name:product_custom.model_product_product
+#: model:ir.model,name:product_custom.model_product_template
 msgid "Product"
 msgstr "Producto"
 
 #. module: product_custom
+#: model:ir.actions.act_window,name:product_custom.product_brand_action
+#: model:ir.model.fields,field_description:product_custom.field_product_product__product_brand_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_template__product_brand_ids
+#: model:ir.ui.menu,name:product_custom.product_brand_menu
+#: model_terms:ir.ui.view,arch_db:product_custom.product_brand_view_form
+#: model_terms:ir.ui.view,arch_db:product_custom.product_brand_view_tree
+msgid "Product Brand"
+msgstr "Producto de marca"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_product__product_brand_code
+msgid "Product Brand Code"
+msgstr "Código de marca del producto"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_template__product_class_code
+msgid "Product CLass Code"
+msgstr "Código de clase de producto"
+
+#. module: product_custom
+#: model:ir.model,name:product_custom.model_product_category
+#: model:ir.model.fields,field_description:product_custom.field_product_class__product_category_id
+msgid "Product Category"
+msgstr "categoria de producto"
+
+#. module: product_custom
+#: model:ir.model,name:product_custom.model_product_class
+#: model:ir.model.fields,field_description:product_custom.field_product_category__product_class_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_product__product_class_id
+#: model:ir.model.fields,field_description:product_custom.field_product_template__product_class_id
+#: model_terms:ir.ui.view,arch_db:product_custom.product_category_form_view_inherit_product_category
+#: model_terms:ir.ui.view,arch_db:product_custom.product_class_view_tree
+msgid "Product Class"
+msgstr "Clase de producto"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_product__product_class_code
+msgid "Product Class Code"
+msgstr "Código de clase de producto"
+
+#. module: product_custom
+#: model:ir.actions.act_window,name:product_custom.product_material_action
+#: model:ir.model,name:product_custom.model_product_material
+#: model:ir.model.fields,field_description:product_custom.field_product_product__product_material_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_template__product_material_ids
+#: model:ir.ui.menu,name:product_custom.product_material_menu
+#: model_terms:ir.ui.view,arch_db:product_custom.product_material_view_form
+#: model_terms:ir.ui.view,arch_db:product_custom.product_material_view_tree
+msgid "Product Material"
+msgstr "Material del producto"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_product__product_material_code
+msgid "Product Material Code"
+msgstr "Código de material del producto"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_product__product_product_id
+#: model:ir.model.fields,field_description:product_custom.field_product_template__product_product_id
+msgid "Product Product"
+msgstr "Producto Producto"
+
+#. module: product_custom
+#: model:ir.actions.act_window,name:product_custom.product_reference_action
+#: model:ir.model,name:product_custom.model_product_reference
+#: model:ir.ui.menu,name:product_custom.product_reference_menu
+#: model_terms:ir.ui.view,arch_db:product_custom.product_reference_view_form
+#: model_terms:ir.ui.view,arch_db:product_custom.product_reference_view_tree
+msgid "Product Reference"
+msgstr "Referencia del producto"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_brand__product_template_id
+#: model:ir.model.fields,field_description:product_custom.field_product_material__product_template_id
+#: model:ir.model.fields,field_description:product_custom.field_product_product__product_template_id
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: product_custom
 #: model:ir.model,name:product_custom.model_product_template_attribute_line
 msgid "Product Template Attribute Line"
-msgstr "atributo de plantilla de producto"
+msgstr "Linea de atributo de la plantilla de producto"
 
 #. module: product_custom
 #: model:ir.model,name:product_custom.model_product_template_attribute_value
 msgid "Product Template Attribute Value"
-msgstr "Valor de atributo de plantilla de producto"
+msgstr "Valor de Atributo del Modelo de Producto"
+
+#. module: product_custom
+#: model:ir.model,name:product_custom.model_product_product
+msgid "Product Variant"
+msgstr "Variante de producto"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__activity_user_id
+#: model:ir.model.fields,field_description:product_custom.field_product_product__activity_user_id
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__activity_user_id
+#: model:ir.model.fields,field_description:product_custom.field_product_template__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario responsable"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__message_has_sms_error
+#: model:ir.model.fields,field_description:product_custom.field_product_product__message_has_sms_error
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__message_has_sms_error
+#: model:ir.model.fields,field_description:product_custom.field_product_template__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error de entrega del SMS"
+
+#. module: product_custom
+#: model:ir.model.fields,help:product_custom.field_product_category__activity_state
+#: model:ir.model.fields,help:product_custom.field_product_product__activity_state
+#: model:ir.model.fields,help:product_custom.field_product_reference__activity_state
+#: model:ir.model.fields,help:product_custom.field_product_template__activity_state
+msgid "Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "Estado basado en actividades\n"
+"Vencida: la fecha tope ya ha pasado\n"
+"Hoy: La fecha tope es hoy\n"
+"Planificada: futuras actividades."
+
+#. module: product_custom
+#: model:ir.model.fields,help:product_custom.field_product_category__activity_exception_decoration
+#: model:ir.model.fields,help:product_custom.field_product_product__activity_exception_decoration
+#: model:ir.model.fields,help:product_custom.field_product_reference__activity_exception_decoration
+#: model:ir.model.fields,help:product_custom.field_product_template__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo de actividad de excepción registrada."
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__website_message_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_product__website_message_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__website_message_ids
+#: model:ir.model.fields,field_description:product_custom.field_product_template__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: product_custom
+#: model:ir.model.fields,help:product_custom.field_product_category__website_message_ids
+#: model:ir.model.fields,help:product_custom.field_product_product__website_message_ids
+#: model:ir.model.fields,help:product_custom.field_product_reference__website_message_ids
+#: model:ir.model.fields,help:product_custom.field_product_template__website_message_ids
+msgid "Website communication history"
+msgstr "Historial de comunicaciones del sitio web"
+
