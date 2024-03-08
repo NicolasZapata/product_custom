@@ -113,7 +113,7 @@ msgstr "Marcas y materiales"
 #: model:ir.model.fields,field_description:product_custom.field_product_product__category_code
 #: model:ir.model.fields,field_description:product_custom.field_product_template__category_code
 msgid "Category Code"
-msgstr "Código de categoría"
+msgstr "Código de categoría del producto"
 
 #. module: product_custom
 #: model:ir.model.fields,field_description:product_custom.field_product_brand__code
