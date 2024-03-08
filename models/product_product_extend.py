@@ -9,6 +9,7 @@ class ProductProduct(models.Model):
         "Product Class Code",
         tracking=True,
         related="product_class_id.code",
+        # domain="[('product_template_id', '=', product_tmpl_id)]",
     )
     categ_code = fields.Char(
         "Category Code",
@@ -21,6 +22,7 @@ class ProductProduct(models.Model):
     #     # store=True,
     #     # compute="_onchange_product_class_id",
     #     # related="product_template_id.product_class_id",
+    #     domain="[('product_template_id', '=', product_tmpl_id)]",
     # )
     brand_code = fields.Char(string="Brand", related="product_brand_id.code")
     material_code = fields.Char(string="Material", related="product_material_id.code")
@@ -65,15 +67,27 @@ class ProductProduct(models.Model):
         tracking=True,
     )
     product_template_id = fields.Many2one("product.template", string="Product Template")
-    product_brand_id = fields.Many2one("product.brand", string="Brand", tracking=True)
+    product_brand_id = fields.Many2one(
+        "product.brand",
+        string="Brand",
+        tracking=True,
+        # domain="[('product_template_id', '=', product_tmpl_id)]",
+    )
     product_brand_code = fields.Char(
-        "Product Brand Code", related="product_brand_id.code"
+        "Product Brand Code",
+        related="product_brand_id.code",
+        # domain="[('product_template_id', '=', product_tmpl_id)]",
     )
     product_material_id = fields.Many2one(
-        "product.material", string="Material", tracking=True
+        "product.material",
+        string="Material",
+        tracking=True,
+        # domain="[('product_template_id', '=', product_tmpl_id)]",
     )
     product_material_code = fields.Char(
-        "Product Material Code", related="product_material_id.code"
+        "Product Material Code",
+        related="product_material_id.code",
+        # domain="[('product_template_id', '=', product_tmpl_id)]",
     )
 
     @api.onchange('product_class_id')

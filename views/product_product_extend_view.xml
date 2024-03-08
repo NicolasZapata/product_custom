@@ -22,13 +22,13 @@
                             </h2>
                         </div>
                         <group name="brand_material" string="Brands And Materials">
-                            <group name="brand" string="Brand">
-                                <field name="product_brand_id" />
-                                <field name="product_brand_code" />
-                            </group>
                             <group name="material" string="Material">
                                 <field name="product_material_id" />
                                 <field name="product_material_code" />
+                            </group>
+                            <group name="brand" string="Brand">
+                                <field name="product_brand_id" />
+                                <field name="product_brand_code" />
                             </group>
                         </group>
                     </page>
