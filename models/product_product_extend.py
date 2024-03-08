@@ -5,6 +5,16 @@ class ProductProduct(models.Model):
     _name = "product.product"
     _inherit = ["product.product", "mail.thread", "mail.activity.mixin"]
 
+    # Product References
+    product_reference_id = fields.Many2one(
+        "product.reference",
+        string="Product Reference",
+        tracking=True,
+    )
+    product_reference_code = fields.Char(
+        "Product Reference Code", related="product_reference_id.code"
+    )
+    #  Product Class
     product_class_code = fields.Char(
         "Product Class Code",
         tracking=True,

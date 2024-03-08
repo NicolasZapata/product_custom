@@ -22,28 +22,19 @@
         <xpath expr="//field[@name='categ_id']" position="after">
           <field name="product_product_id" invisible="1"/>
           <field name="category_code" />
-          <field name="product_class_id" />
+          <field name="product_class_id" readonly="1"/>
           <field name="product_class_code" />
         </xpath>
-        <!-- <xpath expr="//page[@name='variants']" position="replace">
-          <page name="brands_materials" string="Brands and Materials">
-            <separator string="Brands" />
-            <field name="product_brand_ids" widget="one2many">
-              <tree editable="bottom">
-                <field name="name" />
-                <field name="code" />
-              </tree>
-            </field>
-            <separator string="Materials" />
-            <field name="product_material_ids" widget="one2many">
-              <tree editable="bottom">
-                <field name="name" />
-                <field name="code" />
-              </tree>
-            </field>
-          </page>
-        </xpath> -->
-      </field>
+        <xpath expr="//field[@name='categ_id']" position="attributes">
+          <attribute name="readonly">1</attribute>
+        </xpath>
+        <xpath expr="//field[@name='barcode']" position="attributes">
+          <attribute name="readonly">1</attribute>
+        </xpath>
+        <xpath expr="//field[@name='default_code']" position="attributes">
+          <attribute name="readonly">1</attribute>
+        </xpath>
+     </field>
     </record>
 
   </data>
