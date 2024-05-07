@@ -29,9 +29,6 @@
           />
           <field name="product_class_code" />
         </xpath>
-        <xpath expr="//field[@name='categ_id']" position="attributes">
-          <attribute name="readonly">1</attribute>
-        </xpath>
         <xpath expr="//field[@name='barcode']" position="attributes">
           <attribute name="readonly">1</attribute>
         </xpath>
