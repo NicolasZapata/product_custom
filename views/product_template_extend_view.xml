@@ -24,7 +24,6 @@
           <field name="category_code" />
           <field 
             name="product_class_id" 
-            readonly="1"
             domain="[('product_category_id', '=', categ_id)]"
           />
           <field name="product_class_code" />
