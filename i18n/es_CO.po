@@ -1,21 +1,28 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * product_custom
-# nicoz, 2024.
+# 	* product_custom
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0-20231120\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-08 21:13+0000\n"
-"PO-Revision-Date: 2024-03-08 16:16-0500\n"
-"Last-Translator: nicoz <>\n"
+"POT-Creation-Date: 2024-05-09 20:30+0000\n"
+"PO-Revision-Date: 2024-05-09 15:45-0500\n"
+"Last-Translator: \n"
 "Language-Team: \n"
-"Language: es\n"
+"Language: es_CO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Poedit 3.4.3\n"
+
+#. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+#, fuzzy
+msgid "<span>All general settings about this product are managed on</span>"
+msgstr ""
+"<span>Todos los ajustes generales de este producto se gestionan en</span>"
 
 #. module: product_custom
 #: model:ir.model.fields,field_description:product_custom.field_product_category__message_needaction
@@ -73,6 +80,11 @@ msgid "Add a new Product Brand"
 msgstr "Agregar una nueva marca de producto"
 
 #. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: product_custom
 #: model:ir.model.fields,field_description:product_custom.field_product_category__message_attachment_count
 #: model:ir.model.fields,field_description:product_custom.field_product_product__message_attachment_count
 #: model:ir.model.fields,field_description:product_custom.field_product_reference__message_attachment_count
@@ -87,6 +99,7 @@ msgid "Attribute Type"
 msgstr "Tipo de atributo"
 
 #. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_form_extend_view
 msgid "Barcode Configuration"
 msgstr "Configuración de código de barras"
@@ -97,6 +110,7 @@ msgstr "Configuración de código de barras"
 #: model:ir.model.fields,field_description:product_custom.field_product_product__brand_id
 #: model:ir.model.fields,field_description:product_custom.field_product_product__product_brand_id
 #: model:ir.model.fields.selection,name:product_custom.selection__product_template_attribute_line__attribute_type__brand
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_form_extend_view
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_search_form_view_extend
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_search_stock_form_extend
@@ -104,6 +118,12 @@ msgid "Brand"
 msgstr "Marca"
 
 #. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+msgid "Brands"
+msgstr "Marcas"
+
+#. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_form_extend_view
 msgid "Brands And Materials"
 msgstr "Marcas y materiales"
@@ -123,6 +143,12 @@ msgstr "Código de categoría del producto"
 #: model:ir.model.fields,field_description:product_custom.field_product_reference__code
 msgid "Code"
 msgstr "Código"
+
+#. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+#, fuzzy
+msgid "Codes"
+msgstr "Códigos"
 
 #. module: product_custom
 #: model:ir.model.fields,field_description:product_custom.field_product_brand__create_uid
@@ -171,6 +197,11 @@ msgstr "Seguidores (Asociados)"
 #: model:ir.model.fields,help:product_custom.field_product_template__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
 msgstr "Icono de Font Awesome ej. fa-tasks"
+
+#. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+msgid "General Information"
+msgstr "Información general"
 
 #. module: product_custom
 #: model:ir.model.fields,field_description:product_custom.field_product_category__has_message
@@ -225,6 +256,7 @@ msgid "If checked, some messages have a delivery error."
 msgstr "Si se encuentra marcado, algunos mensajes tienen error de envío."
 
 #. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_form_extend_view
 msgid "Internal Reference"
 msgstr "Referencia Interna"
@@ -262,6 +294,11 @@ msgid "Last Updated on"
 msgstr "Ultima actualización en"
 
 #. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+msgid "Logistics"
+msgstr "Logística"
+
+#. module: product_custom
 #: model:ir.model.fields,field_description:product_custom.field_product_category__message_main_attachment_id
 #: model:ir.model.fields,field_description:product_custom.field_product_product__message_main_attachment_id
 #: model:ir.model.fields,field_description:product_custom.field_product_reference__message_main_attachment_id
@@ -280,11 +317,17 @@ msgstr "marca"
 #: model:ir.model.fields,field_description:product_custom.field_product_product__material_id2
 #: model:ir.model.fields,field_description:product_custom.field_product_product__product_material_id
 #: model:ir.model.fields.selection,name:product_custom.selection__product_template_attribute_line__attribute_type__material
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_form_extend_view
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_search_form_view_extend
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_search_stock_form_extend
 msgid "Material"
 msgstr "Material"
+
+#. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+msgid "Materials"
+msgstr "Materiales"
 
 #. module: product_custom
 #: model:ir.model.fields,field_description:product_custom.field_product_category__message_has_error
@@ -317,6 +360,14 @@ msgstr "Mi fecha límite de actividad"
 #: model:ir.model.fields,field_description:product_custom.field_product_reference__name
 msgid "Name"
 msgstr "Nombre"
+
+#. module: product_custom
+#: model:ir.model.fields,field_description:product_custom.field_product_category__activity_calendar_event_id
+#: model:ir.model.fields,field_description:product_custom.field_product_product__activity_calendar_event_id
+#: model:ir.model.fields,field_description:product_custom.field_product_reference__activity_calendar_event_id
+#: model:ir.model.fields,field_description:product_custom.field_product_template__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Siguiente evento en el calendario de actividades."
 
 #. module: product_custom
 #: model:ir.model.fields,field_description:product_custom.field_product_category__activity_date_deadline
@@ -397,6 +448,17 @@ msgid "Other"
 msgstr "Otro"
 
 #. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+#, fuzzy
+msgid "Packaging"
+msgstr "Embalaje"
+
+#. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+msgid "Pricing"
+msgstr "Precios"
+
+#. module: product_custom
 #: model:ir.model,name:product_custom.model_product_template
 msgid "Product"
 msgstr "Producto"
@@ -424,6 +486,7 @@ msgstr "Código de clase de producto"
 #. module: product_custom
 #: model:ir.model,name:product_custom.model_product_category
 #: model:ir.model.fields,field_description:product_custom.field_product_class__product_category_id
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_form_extend_view
 msgid "Product Category"
 msgstr "Categoria de Producto"
@@ -435,6 +498,7 @@ msgstr "Categoria de Producto"
 #: model:ir.model.fields,field_description:product_custom.field_product_template__product_class_id
 #: model_terms:ir.ui.view,arch_db:product_custom.product_category_form_view_inherit_product_category
 #: model_terms:ir.ui.view,arch_db:product_custom.product_class_view_tree
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_form_extend_view
 msgid "Product Class"
 msgstr "Clase de producto"
@@ -445,6 +509,7 @@ msgid "Product Class Code"
 msgstr "Código de clase de producto"
 
 #. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_form_extend_view
 msgid "Product Information"
 msgstr "Información del producto"
@@ -466,6 +531,11 @@ msgid "Product Material Code"
 msgstr "Código de material del producto"
 
 #. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+msgid "Product Name"
+msgstr "Nombre del Producto"
+
+#. module: product_custom
 #: model:ir.model.fields,field_description:product_custom.field_product_product__product_product_id
 #: model:ir.model.fields,field_description:product_custom.field_product_template__product_product_id
 msgid "Product Product"
@@ -476,6 +546,7 @@ msgstr "Producto Producto"
 #: model:ir.model,name:product_custom.model_product_reference
 #: model:ir.model.fields,field_description:product_custom.field_product_product__product_reference_id
 #: model:ir.ui.menu,name:product_custom.product_reference_menu
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_form_extend_view
 #: model_terms:ir.ui.view,arch_db:product_custom.product_reference_view_form
 #: model_terms:ir.ui.view,arch_db:product_custom.product_reference_view_tree
@@ -488,6 +559,7 @@ msgid "Product Reference Code"
 msgstr "Código de Referencia del Producto"
 
 #. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
 #: model_terms:ir.ui.view,arch_db:product_custom.product_product_form_extend_view
 msgid "Product References"
 msgstr "Referencias del Producto"
@@ -510,9 +582,15 @@ msgid "Product Template Attribute Value"
 msgstr "Valor de Atributo del Modelo de Producto"
 
 #. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+#, fuzzy
+msgid "Product Template Tags"
+msgstr "Etiquetas de plantilla de producto"
+
+#. module: product_custom
 #: model:ir.model,name:product_custom.model_product_product
 msgid "Product Variant"
-msgstr "Variante del Producto"
+msgstr "Variante de producto"
 
 #. module: product_custom
 #: model:ir.model.fields,field_description:product_custom.field_product_category__activity_user_id
@@ -531,6 +609,12 @@ msgid "SMS Delivery error"
 msgstr "Error de entrega del SMS"
 
 #. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+#, fuzzy
+msgid "Sales Price"
+msgstr "Precio de venta"
+
+#. module: product_custom
 #: model:ir.model.fields,help:product_custom.field_product_category__activity_state
 #: model:ir.model.fields,help:product_custom.field_product_product__activity_state
 #: model:ir.model.fields,help:product_custom.field_product_reference__activity_state
@@ -545,6 +629,11 @@ msgstr ""
 "Vencida: la fecha tope ya ha pasado\n"
 "Hoy: La fecha tope es hoy\n"
 "Planificada: futuras actividades."
+
+#. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+msgid "Tags"
+msgstr "Etiquetas"
 
 #. module: product_custom
 #: model:ir.model.fields,help:product_custom.field_product_category__activity_exception_decoration
@@ -569,3 +658,15 @@ msgstr "Mensajes del sitio web"
 #: model:ir.model.fields,help:product_custom.field_product_template__website_message_ids
 msgid "Website communication history"
 msgstr "Historial de comunicaciones del sitio web"
+
+#. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+#, fuzzy
+msgid "e.g. Odoo Enterprise Subscription"
+msgstr "por ejemplo, la suscripción a Odoo Enterprise"
+
+#. module: product_custom
+#: model_terms:ir.ui.view,arch_db:product_custom.product_custom_easy_edit_form_extend_view
+#, fuzzy
+msgid "the product template."
+msgstr "la plantilla del producto."
