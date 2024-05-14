@@ -471,7 +471,7 @@ msgstr "Producto"
 #: model_terms:ir.ui.view,arch_db:product_custom.product_brand_view_form
 #: model_terms:ir.ui.view,arch_db:product_custom.product_brand_view_tree
 msgid "Product Brand"
-msgstr "Producto de marca"
+msgstr "Marca de producto"
 
 #. module: product_custom
 #: model:ir.model.fields,field_description:product_custom.field_product_product__product_brand_code
