@@ -264,7 +264,7 @@
             <field name="inherit_id" ref="product.product_product_tree_view" />
             <field name="arch" type="xml">
                 <!--                Fields           -->
-                <xpath expr="//field[@name='name']" position="before">
+                <xpath expr="//field[@name='name']" position="after">
                     <field name="product_material_id" />
                     <field name="product_brand_id" />
                 </xpath>
@@ -272,7 +272,7 @@
                     <field name="activity_ids" widget="list_activity" optional="show" />
                 </xpath>
                 <xpath expr="//field[@name='default_code']" position="before">
-                    <field name="name" readonly="1" />
+                    <field name="display_name" readonly="1" />
                 </xpath>
             </field>
         </record>
